@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<MenuBar fx:id="menuBar" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.eloadasbeadando.ViewController">
+    <menus>
+        <Menu text="Adatbázis">
+            <items>
+                <MenuItem text="Olvas" onAction="#menuOlvasClick"/>
+                <MenuItem text="Olvas2" onAction="#menuOlvas2Click"/>
+                <MenuItem text="Ír" onAction="#menuIrClick"/>
+                <MenuItem text="Módosít" onAction="#menuModositClick"/>
+            </items>
+        </Menu>
+        <Menu text="SOAP">
+            <items>
+                <MenuItem text="Letöltés" onAction="#menuLetoltesClick"/>
+                <MenuItem text="Letöltés2" onAction="#menuLetoltes2Click"/>
+                <MenuItem text="Grafikon" onAction="#menuGrafikonClick"/>
+            </items>
+        </Menu>
+        <Menu text="Párhuzamos">
+            <items>
+                <MenuItem text="Párhuzamos" onAction="#menuParhuzamosClick"/>
+            </items>
+        </Menu>
+        <Menu text="Forex">
+            <items>
+                <MenuItem text="Számlainformációk" onAction="#menuSzamlaInfClick"/>
+                <MenuItem text="Aktuális árak" onAction="#menuAktArClick"/>
+                <MenuItem text="Historikus árak" onAction="#menuHistArClick"/>
+                <MenuItem text="Pozíció nyitás" onAction="#menuPozNyitasClick"/>
+                <MenuItem text="Pozíció zárás" onAction="#menuPozZarasClick"/>
+                <MenuItem text="Nyitott pozíciók" onAction="#menuNyitottPozClick"/>
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

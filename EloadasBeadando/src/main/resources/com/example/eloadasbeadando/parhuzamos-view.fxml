@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eloadasbeadando.ParallelController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="0.0" />
+    </padding>
+    <fx:include source="Menu.fxml" />
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <left>
+         <Label fx:id="label1" text="Oda" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+      </left>
+      <right>
+         <Label fx:id="label2" text="Oda" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+      </right>
+      <top>
+         <Label text="Párhuzamos vérgehajtás demonstráció" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+      </top>
+   </BorderPane>
+</VBox>
