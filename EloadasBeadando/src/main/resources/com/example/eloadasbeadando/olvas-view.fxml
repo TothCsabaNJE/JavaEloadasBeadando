@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.VBox?>
+
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.eloadasbeadando.ViewController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="0.0"/>
-    </padding>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.eloadasbeadando.OlvasController">
     <fx:include source="Menu.fxml"/>
+    <AnchorPane>
+        <children>
+            <TableView fx:id="olvas_tablazat" layoutX="13.0" layoutY="52.0" prefHeight="386.0" prefWidth="953.0">
+                <columns>
+                    <TableColumn fx:id="id_column" text="Id" />
+                    <TableColumn fx:id="nev_column" text="Név" />
+                    <TableColumn fx:id="tipus_column" text="Típus" />
+                    <TableColumn fx:id="dijazott_column" text="Díjazott" />
+                    <TableColumn fx:id="ertek_column" text="Érték" />
+                    <TableColumn fx:id="egyseg_column" text="Egység" />
+                    <TableColumn fx:id="mentes_column" text="Mentes" />
+                </columns>
+            </TableView>
+        </children>
+    </AnchorPane>
 </VBox>

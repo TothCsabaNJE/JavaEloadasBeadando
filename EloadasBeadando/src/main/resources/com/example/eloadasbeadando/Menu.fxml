@@ -13,6 +13,7 @@
                 <MenuItem text="Olvas2" onAction="#menuOlvas2Click"/>
                 <MenuItem text="Ír" onAction="#menuIrClick"/>
                 <MenuItem text="Módosít" onAction="#menuModositClick"/>
+                <MenuItem text="Töröl" onAction="#menuTorolClick"/>
             </items>
         </Menu>
         <Menu text="SOAP">

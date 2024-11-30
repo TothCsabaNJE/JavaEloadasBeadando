@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eloadasbeadando.TorolController">
+    <fx:include source="Menu.fxml"/>
+    <AnchorPane>
+        <children>
+            <VBox layoutX="25.0" layoutY="26.0" prefHeight="25.0" prefWidth="77.0" spacing="30.0">
+                <children>
+                    <Label text="Azonosító:" />
+                </children>
+            </VBox>
+            <VBox layoutX="102.0" layoutY="26.0" prefHeight="199.0" prefWidth="164.0" spacing="19.0">
+                <children>
+                    <ChoiceBox fx:id="id_choiceBox" prefHeight="25.0" prefWidth="163.0" />
+                </children>
+            </VBox>
+            <Button fx:id="torles_button" layoutX="214.0" layoutY="70.0" mnemonicParsing="false" onAction="#torles_click" text="Törlés" />
+        </children>
+    </AnchorPane>
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eloadasbeadando.ModositController">
+    <fx:include source="Menu.fxml"/>
+    <AnchorPane>
+        <children>
+            <VBox layoutX="25.0" layoutY="26.0" prefHeight="232.0" prefWidth="77.0" spacing="30.0">
+                <children>
+                    <Label text="Id:" />
+                    <Label text="Süti ID:" />
+                    <Label text="Érték:" />
+                    <Label text="Egység:" />
+                </children>
+            </VBox>
+            <VBox layoutX="102.0" layoutY="26.0" prefHeight="239.0" prefWidth="164.0" spacing="19.0">
+                <children>
+                    <ChoiceBox fx:id="id_choiceBox" prefHeight="25.0" prefWidth="163.0" />
+                    <TextField fx:id="sutiid_textField" />
+                    <TextField fx:id="ertek_textField">
+                        <VBox.margin>
+                            <Insets top="5.0" />
+                        </VBox.margin>
+                    </TextField>
+                    <TextField fx:id="egyseg_textField">
+                        <VBox.margin>
+                            <Insets top="2.0" />
+                        </VBox.margin>
+                    </TextField>
+                </children>
+            </VBox>
+            <Button fx:id="modositas_button" layoutX="133.0" layoutY="265.0" mnemonicParsing="false" onAction="#modosit_click" prefHeight="25.0" prefWidth="115.0" text="Módosítás" />
+        </children>
+    </AnchorPane>
+</VBox>
